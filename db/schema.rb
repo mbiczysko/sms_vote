@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 20170725231556) do
     t.string "validity"
     t.string "choice"
     t.string "conn"
-    t.integer "msisdn"
+    t.bigint "msisdn"
     t.string "guid"
-    t.integer "short_code"
+    t.bigint "short_code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["campaign"], name: "index_votes_on_campaign"
