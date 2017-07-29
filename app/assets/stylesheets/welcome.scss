@@ -54,9 +54,6 @@ h1 {
   margin-left: 0;
 }
 
-.sidebar .nav-link {
-  border-radius: 0;
-}
 
 /*
  * Dashboard
@@ -70,4 +67,42 @@ h1 {
 .placeholder img {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+
+/**
+ * Custom Css from Will Paginate documenation
+ */
+
+.custom_pagination {
+  text-align: center;
+  padding: 0.3em;
+  cursor: default; }
+  .custom_pagination a, .custom_pagination span, .custom_pagination em {
+    padding: 0.2em 0.5em; }
+  .custom_pagination .disabled {
+    color: #aaaaaa; }
+  .custom_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    color: #ff0084; }
+  .custom_pagination a {
+    border: 1px solid #dddddd;
+    color: #337ab7;
+    text-decoration: none; }
+    .custom_pagination a:hover, .custom_pagination a:focus {
+      border-color: #337ab7;
+      background: #337ab7;
+      color: white; }
+  .custom_pagination .page_info {
+    color: #aaaaaa;
+    padding-top: 0.8em; }
+  .custom_pagination .previous_page, .custom_pagination .next_page {
+    border-width: 2px; }
+  .custom_pagination .previous_page {
+    margin-right: 1em; }
+  .custom_pagination .next_page {
+    margin-left: 1em; }
+.sidebar .nav-link {
+  border-radius: 0;
 }

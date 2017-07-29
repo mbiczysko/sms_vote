@@ -21,7 +21,7 @@ IO.foreach("votes.txt")  do |line|
     #create vote hash
     vote = line.chomp.gsub("VOTE ", "Epoch_Time:").split(" ").map{|array| array.split(":")}.to_h
     Vote.create!(
-      epoch_time: vote["Epoch_Time"],
+      epoch_time: Time.at(vote["Epoch_Time"].to_i),
       campaign: vote["Campaign"],
       validity: vote["Validity"],
       choice: vote["Choice"],
