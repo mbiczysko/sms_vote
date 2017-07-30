@@ -5,8 +5,10 @@ class WelcomeController < ApplicationController
   helper_method :sort_column, :sort_direction
 
   def index
-    @votes = Vote.paginate(:page => params[:page], :per_page => 10).order("#{sort_column} #{sort_direction}")
+    @dashboard = Dashboard.new(params)
+  end
 
+  def by_campaign
     @dashboard = Dashboard.new(params)
   end
 

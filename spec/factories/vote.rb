@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :vote do
-    campaign  "first_campain"
+    campaign  "first_campaign"
     choice  "Joe"
     validity  "during"
   end

@@ -6,4 +6,9 @@ module WelcomeHelper
     icon = column == sort_column ? icon : ""
     link_to "#{title} <span class='#{icon}'></span>".html_safe, {column: column, direction: direction}
   end
+
+  def percent_of(m,n)
+    m.to_f / n.to_f * 100.0
+  end
+
 end
